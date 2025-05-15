@@ -94,7 +94,7 @@ body {
     align-items: center;
 }
 
-.header__btn{
+.header__btn {
     display: none;
     font-size: 1.4em;
 }
@@ -163,7 +163,7 @@ body {
 
 .header__div__second li {
     height: 100%;
-font-size: .8em;
+    font-size: .8em;
     border-left: 1px solid black;
     display: flex;
     flex-flow: row nowrap;
@@ -182,10 +182,128 @@ font-size: .8em;
     cursor: pointer;
 }
 
+.hover__weight:hover {
+    font-weight: bold;
+}
+
 .header__div__mobile {
     display: none;
 }
 
+
+/************* desplegable Buscar *************/
+
+.dropdown__buscar {
+    position: relative;
+}
+
+.dropdown__menu__buscar {
+    width: 20rem;
+    min-height: 50vh;
+    font-family: "Barlow", sans-serif;
+    border: 1px solid black;
+    text-transform: uppercase;
+    position: absolute;
+    top: 102%;
+    /* debajo del enlace principal */
+    left: 0;
+
+    background-color: white;
+    /* list-style: none; */
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+
+    /* transición */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown__menu__buscar li {
+    padding: 1rem 1rem;
+
+}
+
+.dropdown__buscar:hover .dropdown__menu__buscar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+.dropdown__buscar:hover .dropdown__menu__buscar li {
+    border: none;
+}
+
+.contenedor__text{
+    width: 100%;
+    min-height: 80vh;
+    font-size: 3vw;
+    background-color: var(--color-verd);
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor__text p:nth-of-type(1){
+font-size: .4em;
+}
+
+.contenedor__text p:nth-of-type(3){
+font-size: .4em;
+}
+
+
+
+/************* desplegable Xarxes Socials *************/
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__menu {
+    width: 100%;
+    font-family: "Barlow", sans-serif;
+    border: 1px solid black;
+    text-transform: uppercase;
+    position: absolute;
+    top: 102%;
+    /* debajo del enlace principal */
+    left: 0;
+    background-color: white;
+    /* list-style: none; */
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+
+    /* transición */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown__menu li {
+    padding: 1rem 1rem;
+}
+
+.dropdown:hover .dropdown__menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.dropdown:hover .dropdown__menu li {
+    border: none;
+}
 
 
 /****************************** MEDIA QUERIES ******************************/
@@ -232,6 +350,7 @@ font-size: .8em;
         color: black;
         display: block;
         padding-right: 1rem;
+        cursor: pointer;
     }
 
     .nav__ul li {
