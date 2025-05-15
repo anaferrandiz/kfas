@@ -53,6 +53,7 @@ button {
 
 :root {
     font-size: 100%;
+    --color-verd: rgb(212, 255, 0);
 }
 
 html {
@@ -93,6 +94,11 @@ body {
     align-items: center;
 }
 
+.header__btn{
+    display: none;
+    font-size: 1.4em;
+}
+
 .header__h1::after {
     content: "";
     display: inline-block;
@@ -103,8 +109,13 @@ body {
     /* espacio entre el texto y la rayita */
 }
 
+.header__nav {
+    position: relative;
+}
+
 .nav__ul {
     font-size: 1.2em;
+    font-weight: 900;
     width: 80vw;
     /* background-color: darkgray; */
     display: flex;
@@ -115,20 +126,44 @@ body {
     margin-left: 5rem;
 }
 
+.hover__underline {
+    transition: all .2s ease-in-out;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hover__underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #000204;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.hover__underline:hover::after {
+    /* text-decoration: underline; */
+    width: 100%;
+}
+
 .header__div__second {
     height: 3rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    gap: 1rem;
     padding: 0 1rem;
+    font-weight: 400;
 
 }
 
 .header__div__second li {
     height: 100%;
-
+font-size: .8em;
     border-left: 1px solid black;
     display: flex;
     flex-flow: row nowrap;
@@ -139,8 +174,7 @@ body {
     padding: 0 1rem;
 }
 
-
-.header__btn {
+.header__div__second li .header__btn {
     display: none;
     padding-left: 1rem;
     font-size: 2rem;
@@ -152,9 +186,7 @@ body {
     display: none;
 }
 
-.header__nav {
-    position: relative;
-}
+
 
 /****************************** MEDIA QUERIES ******************************/
 
@@ -166,6 +198,7 @@ body {
         padding: 0;
         z-index: 3;
     }
+
 
     .header__h1 {
         padding-left: 1rem;
@@ -181,26 +214,28 @@ body {
 
     }
 
-    .header__btn {
-        display: block;
-        padding-right: 1rem;
-    }
 
     .nav__ul {
         color: white;
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
         background-color: black;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 1.5em;
+        font-size: 1.6em;
         position: absolute;
         margin-left: 0;
     }
 
-    .nav__ul li{
-        font-size: 1.6em;
+    .header__btn {
+        color: black;
+        display: block;
+        padding-right: 1rem;
+    }
+
+    .nav__ul li {
+        font-size: 1.4em;
         font-weight: 600;
     }
 
@@ -208,24 +243,27 @@ body {
         display: none;
     }
 
+    .prova {
+        margin-top: -7rem;
+    }
+
     .header__div__mobile {
         text-transform: uppercase;
-        font-size: .6em;
+        font-size: 2.7vw;
         font-weight: 300;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        color: white;
-        position: absolute;
-        bottom: 5rem;
-
+        color: var(--color-verd);
         text-align: center;
+        margin-top: 3rem;
+
 
         /* flex-direction: column; */
     }
 
-    .header__div__mobile li{
+    .header__div__mobile li {
         font-size: .9em;
     }
 
@@ -235,12 +273,17 @@ body {
 
     .header__div__mobile li {
 
-        border-left: 1px solid rgb(255, 255, 255);
+        border-left: 1px solid var(--color-verd);
 
     }
 
     .quemes {
-        border-right: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid var(--color-verd);
+    }
+
+    .hover__underline::after {
+
+        background-color: var(--color-verd);
 
     }
 
