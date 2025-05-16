@@ -69,9 +69,13 @@ body {
 
 /**************** FIN RESET *****************/
 
+
+
+/******************* HEADER ******************/
+
 .header {
     width: 100%;
-    /* background-color: rgb(212, 255, 0); */
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -191,7 +195,7 @@ body {
 }
 
 
-/************* desplegable Buscar *************/
+/************* DESPLEGABLE BUSCAR *************/
 
 .dropdown__buscar {
     position: relative;
@@ -239,7 +243,7 @@ body {
     border: none;
 }
 
-.contenedor__text{
+.contenedor__text {
     width: 100%;
     min-height: 80vh;
     font-size: 3vw;
@@ -251,12 +255,12 @@ body {
     align-items: center;
 }
 
-.contenedor__text p:nth-of-type(1){
-font-size: .4em;
+.contenedor__text p:nth-of-type(1) {
+    font-size: .4em;
 }
 
-.contenedor__text p:nth-of-type(3){
-font-size: .4em;
+.contenedor__text p:nth-of-type(3) {
+    font-size: .4em;
 }
 
 
@@ -286,7 +290,6 @@ font-size: .4em;
     /* transición */
     opacity: 0;
     transform: translateY(-10px);
-    pointer-events: none;
     transition: all 0.3s ease;
 }
 
@@ -304,6 +307,75 @@ font-size: .4em;
 .dropdown:hover .dropdown__menu li {
     border: none;
 }
+
+
+/******************* FIN HEADER ******************/
+
+
+
+/******************* INICI MAIN ******************/
+
+.main {
+    position: relative;
+}
+
+.wrapper__window__iquemes {
+    width: 100%;
+    color: var(--color-verd);
+    min-height: 94.9vh;
+    background-color: rgb(0, 0, 0);
+    margin-top: 3rem;
+
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+
+
+.wrapper__window__iquemes.isActive {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p__iquemes {
+    width: 70%;
+    font-size: 7vw;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.2em;
+    /* text-transform: uppercase; */
+}
+
+
+.wrapper__infinitetext {
+    width: 100%;
+}
+
+.infinitetext {
+    white-space: nowrap;
+    position: relative;
+    top: 0;
+    font-size: 2em;
+    animation: scrollText 64s ease infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(-50%);
+        /* Empieza fuera de la pantalla, en el extremo derecho */
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* Termina fuera de la pantalla, en el extremo izquierdo */
+    }
+}
+
 
 
 /****************************** MEDIA QUERIES ******************************/
