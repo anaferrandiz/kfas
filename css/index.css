@@ -53,7 +53,7 @@ button {
 
 :root {
     font-size: 100%;
-    --color-verd: rgb(212, 255, 0);
+    --color-verd: #c9df04;
 }
 
 html {
@@ -376,6 +376,38 @@ body {
     }
 }
 
+
+
+.wrapper__principal{
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgb(187, 203, 238);
+    margin-top: 3rem;
+
+    position: relative;
+}
+.principal__h2{
+    width: 100%;
+    text-align: center;
+    font-size: 40vw;
+    color: aliceblue;
+}
+
+.principal__p__text{
+    width: 30vw;
+    font-size: 1.4em;
+    position: absolute;
+    top: 0;
+    margin:2rem 3rem;
+}
+
+.principal__gif{
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+/****************************** FIN MAIN ******************************/
 
 
 /****************************** MEDIA QUERIES ******************************/
