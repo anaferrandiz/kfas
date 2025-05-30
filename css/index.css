@@ -378,32 +378,54 @@ body {
 
 
 
-.wrapper__principal{
+.wrapper__principal {
     width: 100%;
-    min-height: 90vh;
-    background-color: rgb(187, 203, 238);
+    /* min-height: 90vh; */
+    /* background-color: rgb(187, 203, 238); */
     margin-top: 3rem;
 
     position: relative;
 }
-.principal__h2{
+
+.principal__h2 {
     width: 100%;
     text-align: center;
     font-size: 40vw;
     color: aliceblue;
+    display: inline-block;
+    line-height: .9;
+
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    font-weight: bold;
 }
 
-.principal__p__text{
-    width: 30vw;
-    font-size: 1.4em;
-    position: absolute;
-    top: 0;
-    margin:2rem 3rem;
+.principal__p__text {
+    width: 35vw;
+    font-size: 1.5em;
+    font-weight: 600;
+    /* background-color: yellow; */
+    margin-top: 2em;
 }
 
-.principal__gif{
-    width: 30%;
+.wrap__texth2 {
+    width: 95%;
     margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal__gif {
+    min-width: 35%;
+    /* background-color: rebeccapurple; */
+    margin: 0 auto;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 
@@ -448,6 +470,7 @@ body {
         font-size: 1.6em;
         position: absolute;
         margin-left: 0;
+        
     }
 
     .header__btn {
@@ -460,6 +483,10 @@ body {
     .nav__ul li {
         font-size: 1.4em;
         font-weight: 600;
+    }
+
+    .padding-top{
+        margin-top: -3em;
     }
 
     .header__div__second {
@@ -509,5 +536,39 @@ body {
         background-color: var(--color-verd);
 
     }
+
+    /* Wrapper__principal */
+
+    .wrap__texth2 {
+        min-height: 64vh;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .principal__h2 {
+
+        margin-top: 7vh;
+        font-size: 16vw;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .principal__p__text {
+        width: 75vw;
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .principal__gif {
+        width: 50vh;
+        max-width: 80vw;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
 
 }
