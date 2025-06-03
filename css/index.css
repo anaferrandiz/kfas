@@ -115,20 +115,24 @@ body {
 
 .header__nav {
     position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav__ul {
     font-size: 1.2em;
     font-weight: 900;
-    width: 80vw;
     /* background-color: darkgray; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 2.6vw;
     margin-left: 5rem;
 }
+
 
 .hover__underline {
     transition: all .2s ease-in-out;
@@ -429,6 +433,63 @@ body {
 }
 
 
+/* WRAPPER SECTION 01 */
+
+
+.wrapper__section__01 {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.h3__title__section__01 {
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.wrapper__grid__section__01 {
+    width: 100%;
+    display: grid;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem;
+    gap: 3rem;
+}
+
+.grid__section__01 {
+    position: relative;
+
+}
+
+.wrapper__principalinfo {
+    margin-top: 1rem;
+}
+
+.wrapper__principalinfo img {
+    border-radius: 2rem 2rem 0 0;
+    opacity: 0;
+    transition: all ease .3s;
+}
+
+.wrapper__principalinfo:hover .wrap__img img{
+    opacity: 1;
+}
+
+.wrapper__principalinfo .wrap__info {
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+
+.wrapper__principalinfo:hover .wrap__info {
+    opacity: 0;
+}
+
+
+.wrap__info {
+    position: absolute;
+    top: 0;
+}
+
 /****************************** FIN MAIN ******************************/
 
 
@@ -455,7 +516,6 @@ body {
 
     .header__nav.isActive {
         display: block;
-
     }
 
 
@@ -470,7 +530,7 @@ body {
         font-size: 1.6em;
         position: absolute;
         margin-left: 0;
-        
+
     }
 
     .header__btn {
@@ -485,7 +545,7 @@ body {
         font-weight: 600;
     }
 
-    .padding-top{
+    .padding-top {
         margin-top: -3em;
     }
 
@@ -497,8 +557,14 @@ body {
         margin-top: -7rem;
     }
 
+
+
     .header__div__mobile {
+        width: 100%;
+        min-height: 100vh;
         text-transform: uppercase;
+        position: absolute;
+        top: 0;
         font-size: 2.7vw;
         font-weight: 300;
         display: flex;
@@ -508,10 +574,10 @@ body {
         color: var(--color-verd);
         text-align: center;
         margin-top: 3rem;
-
-
-        /* flex-direction: column; */
+        margin: 0 auto;
     }
+
+
 
     .header__div__mobile li {
         font-size: .9em;
