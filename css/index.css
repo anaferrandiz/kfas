@@ -439,6 +439,7 @@ body {
 .wrapper__section__01 {
     width: 94%;
     margin: 0 auto;
+    margin-top: 4rem;
 }
 
 .h3__title__section__01 {
@@ -450,11 +451,10 @@ body {
     width: 100%;
     display: grid;
     border-top: solid 1px black;
-    border-bottom: solid 1px black;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 2rem;
     /* gap: 1rem; */
-    grid-row-gap: 1rem;
+    /* grid-row-gap: 1rem; */
 
 }
 
@@ -469,14 +469,23 @@ body {
 
 .wrapper__principalinfo {
     margin-top: 1rem;
-    background-color: yellow;
     padding: 1rem 1rem 0 1rem;
 
 }
 
 .wrapper__secondinfo {
-    padding: 1rem 1rem 0 1rem;
+    padding: .4rem 1rem .4rem 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.wrapper__secondinfo button {
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
 }
 
 .wrapper__principalinfo img {
@@ -500,13 +509,28 @@ body {
 
 
 .wrap__info {
+    font-size: 2vw;
     position: absolute;
     top: 2rem;
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.border__principalinfo {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.date--green {
+    color: #cfe31e;
+}
+
+
+.date--blue {
+    color: #0074ff;
 }
 
 /****************************** FIN MAIN ******************************/
@@ -655,5 +679,19 @@ body {
 
     }
 
+    /* SECTION 01 */
 
+    .wrapper__grid__section__01 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .border__principalinfo {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .wrap__info {
+        font-size: 6vw;
+     
+    }
 }
