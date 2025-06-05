@@ -2,26 +2,24 @@
 
 
 // EFECTO PARALLAX EN SECTION 02
-
 window.addEventListener('scroll', () => {
   const section = document.querySelector('.wrapper__section__02');
   const overlay = document.querySelector('.wrap__img__section__02');
 
-  const sectionTop = section.offsetTop;
+  const rect = section.getBoundingClientRect();
   const sectionHeight = section.offsetHeight;
-  const scrollY = window.scrollY;
   const windowHeight = window.innerHeight;
 
-  // Calcular cuánto has scrolleado dentro de la sección
-  const progress = (scrollY - sectionTop) / (sectionHeight - windowHeight);
+  const visiblePart = windowHeight - rect.top;
 
-  // Aplicar el movimiento solo si estamos dentro de la sección
-  if (progress >= 0 && progress <= 1) {
-    const translateY = progress * 100;
-    overlay.style.transform = `translateY(-${translateY}%)`;
-  } else if (progress < 0) {
-    overlay.style.transform = `translateY(0%)`;
-  } else {
-    overlay.style.transform = `translateY(-100%)`;
-  }
+  // 🔍 Ajustar para móvil
+  const isMobile = window.innerWidth <= 968;
+  const mobileFactor = isMobile ? 0.6 : 1; // Se va un 40% antes en móvil
+
+  const totalScrollable = sectionHeight * mobileFactor;
+
+  let progress = visiblePart / totalScrollable;
+  progress = Math.min(Math.max(progress, 0), 1);
+
+  overlay.style.transform = `translateY(-${progress * 100}%)`;
 });
