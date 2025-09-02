@@ -1,5 +1,5 @@
 <!-- 
-Este HTML contiene la página principal del sitio web.
+Este HTML contiene la página Agenda del sitio web.
 Estructura:
 - Encabezado
 - Barra de navegación
@@ -12,10 +12,10 @@ Estructura:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K FAS</title>
-    <link rel="shortcut icon" href="assets/forma_06.png" type="image/png">
-    <link rel="icon" href="assets/forma_06.png" type="image/png">
-    <link rel="icon" href="assets/forma_06.png" sizes="192x192">
+    <title>K FAS - Agenda</title>
+    <link rel="shortcut icon" href="../assets/forma_06.png" type="image/png">
+    <link rel="icon" href="../assets/forma_06.png" type="image/png">
+    <link rel="icon" href="../assets/forma_06.png" sizes="192x192">
 
     <meta property="og:title" content="K FAS" />
     <meta property="og:image" content="https://anaferrandiz.github.io/kfas/assets/og.png" />
@@ -24,7 +24,7 @@ Estructura:
     <meta property="og:url" content="https://https://anaferrandiz.github.io/kfas/" />
     <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@ Estructura:
     <header class="header">
 
         <h1 class="header__h1">
-            <a href="index.html" title="K FAS" target="_self">K FAS</a>
+            <a href="../index.html" title="K FAS" target="_self">K FAS</a>
         </h1>
 
         <button class="header__btn" aria-label="Abrir menú de navegación">&#9776;</button>
@@ -55,11 +55,11 @@ Estructura:
 
             <ul class="nav__ul">
                 <li class="nav__li hover__underline padding-top">
-                    <a href="index.html" title="Inicio" target="_self">Inici</a>
+                    <a href="../index.html" title="Inicio" target="_self">Inici</a>
                 </li>
 
                 <li class="nav__li hover__underline">
-                    <a href="html/agenda.html" title="Agenda" target="_self">Agenda</a>
+                    <a href="agenda.html" title="Agenda" target="_self">Agenda</a>
                 </li>
 
                 <li class="nav__li hover__underline">
@@ -120,8 +120,6 @@ Estructura:
 
             </ul>
 
-
-
         </nav>
 
 
@@ -135,6 +133,8 @@ Estructura:
 
     <main class="main">
 
+
+        <!-- PESTAÑA texto infinito -->
         <div class="wrapper__window__iquemes">
             <div class="wrapper__infinitetext">
                 <p class="infinitetext">
@@ -153,195 +153,161 @@ Estructura:
                 </p>
             </div>
         </div>
+        <!-- FIN PESTAÑA texto infinito -->
 
-        <div class="wrapper__principal">
+        <section class="wrapper__section__01 section__01_agenda">
 
-            <div class="wrap__texth2">
-                <p class="principal__p__text">¡Oops! Aquesta web encara està amb pijama.
-                    Estem treballant dur (amb café i memes) per a que açò funcione com deuria.
-                    Per ara, imagina una pàgina increïble aquí… amb unicorns, botons que fan “clic” i gats
-                    programadors.</p>
+            <h3 class="h3__title__section__01">Agenda</h3>
 
-                <h2 class="principal__h2">KFAS</h2>
-            </div>
+            <div class="wrapper__grid__section__01 grid__agenda">
 
+                <div class="grid__section__01 grid__section__01__agenda">
 
-            <div class="principal__gif">
-                <img src="assets/formes_gif.gif" alt="gif formas geométricas">
-            </div>
-        </div>
-
-        <section class="wrapper__section__01">
-
-            <h3 class="h3__title__section__01">K fas pròximament</h3>
-
-            <div class="wrapper__grid__section__01">
-
-                <div class="grid__section__01">
-
-                    <div class="wrapper__principalinfo">
+                    <div class="wrapper__principalinfo wrapper__principalinfo__agenda">
 
                         <div class="wrap__img">
                             <picture>
-                                <source srcset="assets/img_0.webp" media="(max-width:1000px)">
-                                <img src="assets/img_0.webp" alt="descripcion imagen" title="descripcion imagen">
+                                <source srcset="../assets/posters/1.webp" media="(max-width:1000px)">
+                                <img src="../assets/posters/1.webp" alt="descripcion imagen" title="descripcion imagen">
                             </picture>
                         </div>
 
-                        <div class="wrap__info">
-                            <h4 class="h4__section__01">Hackathon del Kaos Creatiu</h4>
-                            <p class="p__date__section__01 date--green">04.06.2028</p>
+                        <div class="wrap__info wrap__info__agenda">
+                            <h4 class="h4__section__01">Hack del Kaos Creatiu</h4>
+                            <p class="p__date__section__01 date--green date--white">04.06.2028</p>
                             <p class="p__hour__section__01">7:00</p>
                         </div>
+
+                        <div class="wrapper__secondinfo wrapper__secondinfo__agenda">
+                            <p>+ info</p>
+                            <button>Vull anar</button>
+                        </div>
                     </div>
 
-                    <div class="wrapper__secondinfo">
-                        <p>+ info</p>
-                        <button>Vull anar</button>
-                    </div>
                 </div>
 
-                <div class="grid__section__01 border__principalinfo">
+                <div class="grid__section__01 border__principalinfo grid__section__01__agenda hover__agenda">
 
-                    <div class="wrapper__principalinfo">
-                        <div class="wrap__img">
-                            <picture>
-                                <source srcset="assets/img_01.webp" media="(max-width:1000px)">
-                                <img src="assets/img_01.webp" alt="descripcion imagen" title="descripcion imagen">
-                            </picture>
-                        </div>
-
-                        <div class="wrap__info">
-                            <h4 class="h4__section__01">Processó de pensaments</h4>
-                            <p class="p__date__section__01 date--blue">10.08.2025</p>
-                            <p class="p__hour__section__01">19:00</p>
-                        </div>
-
-                    </div>
-
-                    <div class="wrapper__secondinfo">
-                        <p>+ info</p>
-                        <button>Vull anar</button>
-                    </div>
-                </div>
-
-                <div class="grid__section__01">
-
-                    <div class="wrapper__principalinfo">
+                    <div class="wrapper__principalinfo wrapper__principalinfo__agenda">
 
                         <div class="wrap__img">
                             <picture>
-                                <source srcset="assets/img_02.webp" media="(max-width:1000px)">
-                                <img src="assets/img_02.webp" alt="descripcion imagen" title="descripcion imagen">
+                                <source srcset="../assets/posters/2.webp" media="(max-width:1000px)">
+                                <img src="../assets/posters/2.webp" alt="descripcion imagen" title="descripcion imagen">
                             </picture>
                         </div>
 
-                        <div class="wrap__info">
-                            <h4 class="h4__section__01">Com ploren les culleres?</h4>
-                            <p class="p__date__section__01 date--blue">14.02.2035</p>
-                            <p class="p__hour__section__01">19:00</p>
+                        <div class="wrap__info wrap__info__agenda">
+                            <h4 class="h4__section__01">Hack del Kaos Creatiu</h4>
+                            <p class="p__date__section__01 date--green date--white">04.06.2028</p>
+                            <p class="p__hour__section__01">7:00</p>
                         </div>
-                    </div>
 
-                    <div class="wrapper__secondinfo">
-                        <p>+ info</p>
-                        <button>Vull anar</button>
+                        <div class="wrapper__secondinfo wrapper__secondinfo__agenda">
+                            <p>+ info</p>
+                            <button>Vull anar</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="grid__section__01">
+                <div class="grid__section__01 grid__section__01__agenda hover__agenda">
 
-                    <div class="wrapper__principalinfo">
+                    <div class="wrapper__principalinfo wrapper__principalinfo__agenda">
 
                         <div class="wrap__img">
                             <picture>
-                                <source srcset="assets/img_03.webp" media="(max-width:1000px)">
-                                <img src="assets/img_03.webp" alt="descripcion imagen" title="descripcion imagen">
+                                <source srcset="../assets/posters/3.webp" media="(max-width:1000px)">
+                                <img src="../assets/posters/3.webp" alt="descripcion imagen" title="descripcion imagen">
                             </picture>
                         </div>
 
-                        <div class="wrap__info">
-                            <h4 class="h4__section__01">Ritual de tasses oblidades</h4>
-                            <p class="p__date__section__01 date--blue">18.09.2055</p>
-                            <p class="p__hour__section__01">19:00</p>
+                        <div class="wrap__info wrap__info__agenda">
+                            <h4 class="h4__section__01">Hack del Kaos Creatiu</h4>
+                            <p class="p__date__section__01 date--green date--white">04.06.2028</p>
+                            <p class="p__hour__section__01">7:00</p>
                         </div>
-                    </div>
 
-                    <div class="wrapper__secondinfo">
-                        <p>+ info</p>
-                        <button>Vull anar</button>
+                        <div class="wrapper__secondinfo wrapper__secondinfo__agenda">
+                            <p>+ info</p>
+                            <button>Vull anar</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="grid__section__01 border__principalinfo">
+                <div class="grid__section__01 grid__section__01__agenda">
 
-                    <div class="wrapper__principalinfo">
+                    <div class="wrapper__principalinfo wrapper__principalinfo__agenda">
 
                         <div class="wrap__img">
                             <picture>
-                                <source srcset="assets/img_04.webp" media="(max-width:1000px)">
-                                <img src="assets/img_04.webp" alt="descripcion imagen" title="descripcion imagen">
+                                <source srcset="../assets/posters/4.webp" media="(max-width:1000px)">
+                                <img src="../assets/posters/4.webp" alt="descripcion imagen" title="descripcion imagen">
                             </picture>
                         </div>
 
-                        <div class="wrap__info">
-                            <h4 class="h4__section__01">Assamblea de rellotges</h4>
-                            <p class="p__date__section__01 date--green">28.04.2085</p>
-                            <p class="p__hour__section__01">19:00</p>
+                        <div class="wrap__info wrap__info__agenda">
+                            <h4 class="h4__section__01">Hack del Kaos Creatiu</h4>
+                            <p class="p__date__section__01 date--green date--white">04.06.2028</p>
+                            <p class="p__hour__section__01">7:00</p>
                         </div>
-                    </div>
 
-                    <div class="wrapper__secondinfo">
-                        <p>+ info</p>
-                        <button>Vull anar</button>
+                        <div class="wrapper__secondinfo wrapper__secondinfo__agenda">
+                            <p>+ info</p>
+                            <button>Vull anar</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="grid__section__01">
+                <div class="grid__section__01 border__principalinfo grid__section__01__agenda hover__agenda">
 
-                    <div class="wrapper__principalinfo">
+                    <div class="wrapper__principalinfo wrapper__principalinfo__agenda">
 
                         <div class="wrap__img">
                             <picture>
-                                <source srcset="assets/img_05.webp" media="(max-width:1000px)">
-                                <img src="assets/img_05.webp" alt="descripcion imagen" title="descripcion imagen">
+                                <source srcset="../assets/posters/5.webp" media="(max-width:1000px)">
+                                <img src="../assets/posters/5.webp" alt="descripcion imagen" title="descripcion imagen">
                             </picture>
                         </div>
 
-                        <div class="wrap__info">
-                            <h4 class="h4__section__01">Dansa amb plantes</h4>
-                            <p class="p__date__section__01 date--green">03.02.2005</p>
-                            <p class="p__hour__section__01">19:00</p>
+                        <div class="wrap__info wrap__info__agenda">
+                            <h4 class="h4__section__01">Hack del Kaos Creatiu</h4>
+                            <p class="p__date__section__01 date--green date--white">04.06.2028</p>
+                            <p class="p__hour__section__01">7:00</p>
+                        </div>
+
+                        <div class="wrapper__secondinfo wrapper__secondinfo__agenda">
+                            <p>+ info</p>
+                            <button>Vull anar</button>
                         </div>
                     </div>
+                </div>
 
-                    <div class="wrapper__secondinfo">
-                        <p>+ info</p>
-                        <button>Vull anar</button>
+                <div class="grid__section__01 grid__section__01__agenda">
+
+                    <div class="wrapper__principalinfo wrapper__principalinfo__agenda">
+
+                        <div class="wrap__img">
+                            <picture>
+                                <source srcset="../assets/posters/6.webp" media="(max-width:1000px)">
+                                <img src="../assets/posters/6.webp" alt="descripcion imagen" title="descripcion imagen">
+                            </picture>
+                        </div>
+
+                        <div class="wrap__info wrap__info__agenda">
+                            <h4 class="h4__section__01">Hack del Kaos Creatiu</h4>
+                            <p class="p__date__section__01 date--green date--white">04.06.2028</p>
+                            <p class="p__hour__section__01">7:00</p>
+                        </div>
+
+                        <div class="wrapper__secondinfo wrapper__secondinfo__agenda">
+                            <p>+ info</p>
+                            <button>Vull anar</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </section>
-
-        <div class="wrapper__section__02">
-
-            <div class="wrap__img__section__02"></div>
-
-            <p class="p__section__02">Aquesta pàgina és com aquest <span class="calceti">calcetí</span> que sempre
-                desapareix a la rentadora: ningú sap com va arribar ahí ni què pretén fer, però hi és. Els enllaços de
-                vegades es perden en uns llimbs digitals on les notificacions descansaran i els gifs decideixen ser més
-                lents per no molestar. Els botons no demanen permís per <span class="brillar">brillar</span> quan passes
-                el cursor, i l'scroll té la mania d'aturar-se just on no vols. El codi està escrit en una llengua antiga
-                que només entenen les <span class="plantes">plantes</span> i alguns insectes nocturns, i cada cop que
-                actualitze alguna cosa, una partícula de sentit comú s'evapora a l'aire. Si alguna cosa surt malament,
-                no és un error, és una obra<span class="experimental"> d'art experimental</span>, i si tot funciona és
-                perquè encara no has trobat el botó ocult que fa que tot es torni una mica més estrany. Aquí no només
-                construisc pàgines, construisc <span class="universos">universos paral·lels</span> on <span
-                    class="absurd">l'absurd és la regla</span> i la lògica, un convidat que va arribar tard i es va
-                quedar dormit.</p>
-
-        </div>
 
 
     </main>
@@ -357,20 +323,20 @@ Estructura:
 
             <div class="footer__imgs__grid">
                 <picture>
-                    <source srcset="assets/form_footer_02_s.webp" media="(max-width:1000px)">
-                    <img src="assets/form_footer_02.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
+                    <source srcset="../assets/form_footer_02_s.webp" media="(max-width:1000px)">
+                    <img src="../assets/form_footer_02.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
                         class="img__grid">
                 </picture>
 
                 <picture>
-                    <source srcset="assets/form_footer_01_s.webp" media="(max-width:1000px)">
-                    <img src="assets/form_footer_01.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
+                    <source srcset="../assets/form_footer_01_s.webp" media="(max-width:1000px)">
+                    <img src="../assets/form_footer_01.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
                         class="img__grid">
                 </picture>
 
                 <picture>
-                    <source srcset="assets/form_footer_03_s.webp" media="(max-width:1000px)">
-                    <img src="assets/form_footer_03.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
+                    <source srcset="../assets/form_footer_03_s.webp" media="(max-width:1000px)">
+                    <img src="../assets/form_footer_03.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
                         class="img__grid">
                 </picture>
             </div>
@@ -411,9 +377,9 @@ Estructura:
 
 
 
-    <script src="js/menu_responsive.js"></script>
-    <script src="js/iquemes.js"></script>
-    <script src="js/index.js"></script>
+    <script src="../js/menu_responsive.js"></script>
+    <script src="../js/iquemes.js"></script>
+    <script src="../js/index.js"></script>
 
 </body>
 
