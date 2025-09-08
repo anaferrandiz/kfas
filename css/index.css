@@ -73,8 +73,14 @@ body {
 
 /**************** FIN RESET *****************/
 
-
-
+/* arrow up */
+.arrow__up{
+    width: 4vh;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 3;
+}
 /******************* HEADER ******************/
 
 .header {
@@ -628,6 +634,8 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+    margin-top: 2rem;
 }
 
 .footer__imgs__grid {
@@ -892,6 +900,13 @@ body {
         max-width: 70%;
         font-size: .9em;
     }
+
+    .arrow__up{
+    width: 5vh;
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 3;
+}
 }
 
 @media (min-width: 970px) and (max-width: 1500px) {
@@ -972,6 +987,47 @@ body {
     border-color: white;
     color: white;
 }
+
+/* PAGINACIÓN AGENDA */
+
+.pagination__agenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    font-size: 1.65em;
+    margin-top: 1.87em;
+    user-select: none;
+}
+
+.pagination__agenda .page-number {
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s;
+}
+
+.pagination__agenda .page-number:hover {
+    color: var(--color-blau-claret);
+}
+
+.pagination__agenda .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pagination__agenda .arrow {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0 8px;
+}
+
+.pagination__agenda .arrow.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
 
 /* MEDIA QUERIES PÁGINA AGENDA */
 
