@@ -1187,9 +1187,8 @@ align-items: flex-start;
 }
 
 .eventos--01{
-    
-
     padding-bottom: 4vh;
+    margin-bottom: -3rem;
 }
 .wrapper__img__eventos {
     
@@ -1232,15 +1231,16 @@ background-color: var(--color-verd-oscur);
 .img--criolo {
     background-image: url("../assets/posters/2_s.webp");
     width: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 .wrapper__img__eventos {
     width: 100%;
     background-size:contain;
     background-repeat: no-repeat;
 }
-
 }
+
+
 
 
 /**************************** FIN PÁGINA EVENTOS--CRIOLO *****************************************************************/
