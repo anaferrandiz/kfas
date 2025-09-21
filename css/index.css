@@ -1107,7 +1107,7 @@ body {
     align-items: center;
 }
 
-.wrapper__img {
+.wrapper__img__eventos {
     width: 100%;
     height: 40rem;
     background-image: url("../assets/posters/1.webp");
@@ -1191,8 +1191,8 @@ align-items: flex-start;
 
     padding-bottom: 4vh;
 }
-.wrapper__img {
-   
+.wrapper__img__eventos {
+    
     background-image: url("../assets/posters/1_s.webp");
    
 }
@@ -1229,11 +1229,17 @@ background-color: var(--color-verd-oscur);
 
 @media (max-width: 1200px) {
 
-.wrapper__img {
-   
+.img--criolo {
     background-image: url("../assets/posters/2_s.webp");
-   
+    width: 100%;
+    min-height: 100%;
 }
+.wrapper__img__eventos {
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
 }
 
 
