@@ -74,13 +74,14 @@ body {
 /**************** FIN RESET *****************/
 
 /* arrow up */
-.arrow__up{
+.arrow__up {
     width: 4vh;
     position: fixed;
     bottom: 1rem;
     right: 2rem;
     z-index: 3;
 }
+
 /******************* HEADER ******************/
 
 .header {
@@ -617,6 +618,15 @@ body {
     text-decoration: underline;
 }
 
+.anar{
+    transition: all 0.1s ease;
+}
+.anar:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.05,1.05);
+}
+
 /****************************** FIN MAIN ******************************/
 
 
@@ -901,12 +911,12 @@ body {
         font-size: .9em;
     }
 
-    .arrow__up{
-    width: 5vh;
-    bottom: 2rem;
-    right: 1rem;
-    z-index: 3;
-}
+    .arrow__up {
+        width: 5vh;
+        bottom: 2rem;
+        right: 1rem;
+        z-index: 3;
+    }
 }
 
 @media (min-width: 970px) and (max-width: 1500px) {
@@ -983,10 +993,31 @@ body {
     color: white;
 }
 
-.grid__section__01__agenda:hover .wrapper__secondinfo__agenda button {
+.grid__section__01__agenda:hover .wrapper__secondinfo__agenda .button {
     border-color: white;
     color: white;
 }
+
+.button {
+    border: 1px solid black;
+    padding: 0.5em 1em;
+    border-radius: 10em;
+}
+
+.button,
+.info {
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.info:hover {
+    transform: scale(1.1, 1.1);
+
+}
+
 
 /* PAGINACIÓN AGENDA */
 
@@ -1038,3 +1069,30 @@ body {
 }
 
 /**************************** FIN PÁGINA AGENDA ****************************/
+
+
+/**************************** INICIO PÁGINA EVENTOS--FRESH ********************************************************************/
+
+
+.wrapper__section__eventos{
+    width: 100%;
+    min-height: 100vh;
+    background-color:var(--color-verd-claret);
+    margin-top: 3em;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.div__eventos{
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(220, 255, 177);
+}
+
+.--margin__footer{
+    margin: 0;
+}
+
+
+/**************************** FIN PÁGINA EVENTOS--FRESH ********************************************************************/
