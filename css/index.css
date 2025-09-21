@@ -618,13 +618,14 @@ body {
     text-decoration: underline;
 }
 
-.anar{
+.anar {
     transition: all 0.1s ease;
 }
-.anar:hover{
+
+.anar:hover {
     background-color: black;
     color: white;
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
 }
 
 /****************************** FIN MAIN ******************************/
@@ -1073,26 +1074,145 @@ body {
 
 /**************************** INICIO PÁGINA EVENTOS--FRESH ********************************************************************/
 
+.header__eventos {
+    background-color: var(--color-blau-oscur);
+}
 
-.wrapper__section__eventos{
+.wrapper__section__eventos {
     width: 100%;
     min-height: 100vh;
-    background-color:var(--color-verd-claret);
+    background-color: var(--color-blau-oscur);
     margin-top: 3em;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.5fr 1.9fr 1.5fr;
     gap: 2rem;
-}
-.div__eventos{
-    width: 100%;
-    min-height: 20vh;
-    background-color: rgb(220, 255, 177);
+   
+    padding: 10rem 2rem 3rem 2rem;
 }
 
-.--margin__footer{
+.div__eventos {
+    width: 100%;
+    min-height: 20vh;
+}
+
+.--margin__footer {
     margin: 0;
 }
 
+.eventos--02 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wrapper__img {
+    width: 100%;
+    height: 40rem;
+    background-image: url("../assets/posters/1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.eventos--01{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 10vh;
+}
+
+.eventos, .kies{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.nombre__princip{
+    font-size: 4.2vw;
+}
+
+.eventos__date{
+    font-size: 2em;
+}
+
+.eventos__hora, .eventos__direction{
+    font-size: 1.5em;
+}
+
+
+.kies{
+    margin-bottom: .5rem;
+}
+
+.kies__titol{
+    margin-bottom: 2rem;
+}
+
+.eventos--03{
+
+display: flex;
+flex-flow: column nowrap;
+justify-content: flex-start;
+align-items: flex-start;
+
+}
+
+.kiespadding{
+    padding-bottom: 1rem;
+}
+
+/****************************** MEDIA QUERIES FRESH ******************************/
+
+@media (max-width: 1200px) {
+
+.wrapper__section__eventos {
+  
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+.wrapper__section__eventos {
+    
+    margin-top: -1rem;
+
+  
+}
+
+.nombre__princip{
+    font-size: 10vw;
+}
+
+.eventos--01{
+    
+
+    padding-bottom: 4vh;
+}
+}
+   
 
 /**************************** FIN PÁGINA EVENTOS--FRESH ********************************************************************/
+
+
+/**************************** INICIO PÁGINA EVENTOS--CRIOLO *****************************************************************/
+
+.header__eventos--verd{
+background-color: var(--color-verd-oscur);
+}
+
+.wrapper__eventos--verd{
+    background-color: var(--color-verd-oscur);
+}
+
+.img--criolo {
+    width: 100%;
+    height: 40rem;
+    background-image: url("../assets/posters/2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem 2rem 0 0;
+}
