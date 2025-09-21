@@ -1191,10 +1191,17 @@ align-items: flex-start;
 
     padding-bottom: 4vh;
 }
+.wrapper__img {
+   
+    background-image: url("../assets/posters/1_s.webp");
+   
+}
 }
    
 
 /**************************** FIN PÁGINA EVENTOS--FRESH ********************************************************************/
+
+
 
 
 /**************************** INICIO PÁGINA EVENTOS--CRIOLO *****************************************************************/
@@ -1216,3 +1223,18 @@ background-color: var(--color-verd-oscur);
     background-repeat: no-repeat;
     border-radius: 2rem 2rem 0 0;
 }
+
+/****************************** MEDIA QUERIES CRIOLO ******************************/
+
+
+@media (max-width: 1200px) {
+
+.wrapper__img {
+   
+    background-image: url("../assets/posters/2_s.webp");
+   
+}
+}
+
+
+/**************************** FIN PÁGINA EVENTOS--CRIOLO *****************************************************************/
