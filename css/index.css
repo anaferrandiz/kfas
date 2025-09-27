@@ -892,10 +892,6 @@ body {
         margin-bottom: 5rem;
     }
 
-    .footer__imgs__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
     .footer__p {
         font-size: 33vw;
         line-height: 1.5;
@@ -1087,13 +1083,12 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 1.9fr 1.5fr;
     gap: 2rem;
-   
+
     padding: 10rem 2rem 3rem 2rem;
 }
 
 .div__eventos {
     width: 100%;
-    min-height: 20vh;
 }
 
 .--margin__footer {
@@ -1117,7 +1112,7 @@ body {
     border-radius: 2rem 2rem 0 0;
 }
 
-.eventos--01{
+.eventos--01 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -1126,77 +1121,137 @@ body {
     padding-bottom: 10vh;
 }
 
-.eventos, .kies{
+.eventos,
+.kies {
     font-size: 1.5em;
     text-transform: uppercase;
 }
 
-.nombre__princip{
+.nombre__princip {
     font-size: 4.2vw;
 }
 
-.eventos__date{
+.eventos__date {
     font-size: 2em;
 }
 
-.eventos__hora, .eventos__direction{
+.eventos__hora,
+.eventos__direction {
     font-size: 1.5em;
 }
 
 
-.kies{
+.kies {
     margin-bottom: .5rem;
 }
 
-.kies__titol{
+.kies__titol {
     margin-bottom: 2rem;
 }
 
-.eventos--03{
+.eventos--03 {
 
-display: flex;
-flex-flow: column nowrap;
-justify-content: flex-start;
-align-items: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 
 }
 
-.kiespadding{
+.kiespadding {
     padding-bottom: 1rem;
 }
 
+
+.wrapper__befandnext {
+    background-color: var(--color-blau-oscur);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.before,
+.next {
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: .9em;
+}
+
+.before, .next {
+    transition: all .2s ease-in-out;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.before::after {
+    content: '';
+    position: absolute;
+    bottom: 22px;
+    left: 25%;
+    width: 0;
+    height: 2px;
+    background-color: #000204;
+    transition: all 0.3s ease;
+    transform: translateX(-20%);
+}
+
+.before:hover::after {
+    /* text-decoration: underline; */
+    width: 60%;
+}
+
+
+.next::after {
+    content: '';
+    position: absolute;
+    bottom: 22px;
+    left: -2%;
+    width: 0;
+    height: 2px;
+    background-color: #000204;
+    transition: all 0.3s ease;
+    transform: translateX(20%);
+}
+
+.next:hover::after {
+    /* text-decoration: underline; */
+    width: 75%;
+}
 /****************************** MEDIA QUERIES FRESH ******************************/
 
 @media (max-width: 1200px) {
 
-.wrapper__section__eventos {
-  
-    grid-template-columns: repeat(1, 1fr);
-    
+    .wrapper__section__eventos {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .wrapper__section__eventos {
+
+        margin-top: -1rem;
+
+
+    }
+
+    .nombre__princip {
+        font-size: 10vw;
+    }
+
+    .eventos--01 {
+        padding-bottom: 4vh;
+        margin-bottom: -3rem;
+    }
+
+    .wrapper__img__eventos {
+
+        background-image: url("../assets/posters/1_s.webp");
+
+    }
 }
 
-.wrapper__section__eventos {
-    
-    margin-top: -1rem;
-
-  
-}
-
-.nombre__princip{
-    font-size: 10vw;
-}
-
-.eventos--01{
-    padding-bottom: 4vh;
-    margin-bottom: -3rem;
-}
-.wrapper__img__eventos {
-    
-    background-image: url("../assets/posters/1_s.webp");
-   
-}
-}
-   
 
 /**************************** FIN PÁGINA EVENTOS--FRESH ********************************************************************/
 
@@ -1205,11 +1260,11 @@ align-items: flex-start;
 
 /**************************** INICIO PÁGINA EVENTOS--CRIOLO *****************************************************************/
 
-.header__eventos--verd{
-background-color: var(--color-verd-oscur);
+.header__eventos--verd {
+    background-color: var(--color-verd-oscur);
 }
 
-.wrapper__eventos--verd{
+.wrapper__eventos--verd {
     background-color: var(--color-verd-oscur);
 }
 
@@ -1228,19 +1283,46 @@ background-color: var(--color-verd-oscur);
 
 @media (max-width: 1200px) {
 
-.img--criolo {
-    background-image: url("../assets/posters/2_s.webp");
-    width: 100%;
-    /* min-height: 100%; */
-}
-.wrapper__img__eventos {
-    width: 100%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-}
+    .img--criolo {
+        background-image: url("../assets/posters/2_s.webp");
+        width: 100%;
+        /* min-height: 100%; */
+    }
 
-
+    .wrapper__img__eventos {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
 
 
 /**************************** FIN PÁGINA EVENTOS--CRIOLO *****************************************************************/
+
+
+
+
+/**************************** INICIO PÁGINA EVENTOS--BURN OUT *****************************************************************/
+
+.img--burnout {
+    width: 100%;
+    height: 40rem;
+    background-image: url("../assets/posters/4.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem 2rem 0 0;
+}
+
+/****************************** MEDIA QUERIES BURN OUT ******************************/
+@media (max-width: 1200px) {
+
+    .img--burnout {
+        background-image: url("../assets/posters/4_s.webp");
+        width: 100%;
+        /* min-height: 100%; */
+    }
+
+}
+
+/**************************** FIN PÁGINA EVENTOS--BURN OUT *****************************************************************/
