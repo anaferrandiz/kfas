@@ -1084,7 +1084,7 @@ body {
     grid-template-columns: 1.5fr 1.9fr 1.5fr;
     gap: 2rem;
 
-    padding: 10rem 2rem 3rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
 }
 
 .div__eventos {
@@ -1103,13 +1103,12 @@ body {
 }
 
 .wrapper__img__eventos {
-    width: 100%;
-    height: 40rem;
-    background-image: url("../assets/posters/1.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 95%;
+}
+
+.wrapper__img__eventos img {
     border-radius: 2rem 2rem 0 0;
+
 }
 
 .eventos--01 {
@@ -1178,7 +1177,8 @@ body {
     font-size: .9em;
 }
 
-.before, .next {
+.before,
+.next {
     transition: all .2s ease-in-out;
     position: relative;
     display: inline-block;
@@ -1219,22 +1219,18 @@ body {
     /* text-decoration: underline; */
     width: 75%;
 }
+
 /****************************** MEDIA QUERIES FRESH ******************************/
 
 @media (max-width: 1200px) {
 
     .wrapper__section__eventos {
-
         grid-template-columns: repeat(1, 1fr);
+        padding-top: 5rem;
+        gap: 4rem;
 
     }
 
-    .wrapper__section__eventos {
-
-        margin-top: -1rem;
-
-
-    }
 
     .nombre__princip {
         font-size: 10vw;
@@ -1247,7 +1243,11 @@ body {
 
     .wrapper__img__eventos {
 
-        background-image: url("../assets/posters/1_s.webp");
+        min-height: 100vw;
+    }
+
+    .wrapper__img__eventos img {
+        border-radius: 0;
 
     }
 }
@@ -1268,35 +1268,6 @@ body {
     background-color: var(--color-verd-oscur);
 }
 
-.img--criolo {
-    width: 100%;
-    height: 40rem;
-    background-image: url("../assets/posters/2.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 2rem 2rem 0 0;
-}
-
-/****************************** MEDIA QUERIES CRIOLO ******************************/
-
-
-@media (max-width: 1200px) {
-
-    .img--criolo {
-        background-image: url("../assets/posters/2_s.webp");
-        width: 100%;
-        /* min-height: 100%; */
-    }
-
-    .wrapper__img__eventos {
-        width: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-}
-
-
 /**************************** FIN PÁGINA EVENTOS--CRIOLO *****************************************************************/
 
 
@@ -1306,7 +1277,6 @@ body {
 
 .img--burnout {
     width: 100%;
-    height: 40rem;
     background-image: url("../assets/posters/4.webp");
     background-size: cover;
     background-position: center;
@@ -1314,15 +1284,5 @@ body {
     border-radius: 2rem 2rem 0 0;
 }
 
-/****************************** MEDIA QUERIES BURN OUT ******************************/
-@media (max-width: 1200px) {
-
-    .img--burnout {
-        background-image: url("../assets/posters/4_s.webp");
-        width: 100%;
-        /* min-height: 100%; */
-    }
-
-}
 
 /**************************** FIN PÁGINA EVENTOS--BURN OUT *****************************************************************/
