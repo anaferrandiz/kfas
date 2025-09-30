@@ -948,10 +948,6 @@ body {
     opacity: 1;
 }
 
-.grid__agenda {
-    width: 97%;
-}
-
 .wrapper__principalinfo__agenda img {
     border-radius: 0;
 
@@ -1218,6 +1214,10 @@ body {
 .next:hover::after {
     /* text-decoration: underline; */
     width: 75%;
+}
+
+.whitecolor{
+    color: white;
 }
 
 /****************************** MEDIA QUERIES FRESH ******************************/
