@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     const grid = document.querySelector(".grid__agenda");
-    const items = Array.from(grid.children); // Todos los conciertos
+    const items = Array.from(grid.children);
     const paginationContainer = document.getElementById("pagination");
 
-    const itemsPerPage = 6;      // Ajusta cuántas tarjetas por página
-    const maxVisiblePages = 5;   // Máximo de números visibles
-    let currentPage = 1;
+    const itemsPerPage = 6;      // tarjetas por página
+    const maxVisiblePages = 5;   // máximo de números visibles
     const totalPages = Math.ceil(items.length / itemsPerPage);
+    let currentPage = 1;
+
+    // 🔹 Restaurar página guardada en sessionStorage si existe
+    const savedPage = parseInt(sessionStorage.getItem("agendaPage"), 10);
+    if (!isNaN(savedPage) && savedPage >= 1 && savedPage <= totalPages) {
+        currentPage = savedPage;
+    }
 
     function renderItems() {
         items.forEach((item, index) => {
@@ -37,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderPagination() {
         paginationContainer.innerHTML = "";
 
-        // Botón anterior
+        // Flecha izquierda
         const prev = document.createElement("span");
         prev.textContent = "˂";
         prev.classList.add("arrow");
@@ -51,9 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         paginationContainer.appendChild(prev);
 
-        // Números de página dinámicos
-        const pageNumbers = getPageNumbers();
-        pageNumbers.forEach(page => {
+        // Números de página
+        getPageNumbers().forEach((page, idx, arr) => {
             const span = document.createElement("span");
             span.textContent = page;
             span.classList.add("page-number");
@@ -64,15 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
             });
             paginationContainer.appendChild(span);
 
-            // Agregar guiones entre los números
-            if (page !== pageNumbers[pageNumbers.length - 1]) {
+            if (idx !== arr.length - 1) {
                 const dash = document.createElement("span");
                 dash.textContent = "-";
                 paginationContainer.appendChild(dash);
             }
         });
 
-        // Botón siguiente
+        // Flecha derecha
         const next = document.createElement("span");
         next.textContent = "˃";
         next.classList.add("arrow");
@@ -87,13 +91,22 @@ document.addEventListener("DOMContentLoaded", () => {
         paginationContainer.appendChild(next);
     }
 
-   function update() {
-    renderItems();
-    renderPagination();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-}
+    function update() {
+        renderItems();
+        renderPagination();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        sessionStorage.setItem("agendaPage", currentPage);
+    }
 
+    // 🔹 Reiniciar a página 1 solo si se hace clic en el enlace de Agenda
+    const agendaLink = document.querySelector('a[href="agenda.html"]');
+    if (agendaLink) {
+        agendaLink.addEventListener("click", () => {
+            sessionStorage.removeItem("agendaPage"); // limpiar la página guardada
+            currentPage = 1;
+            update();
+        });
+    }
 
-    // Inicializar
     update();
 });
