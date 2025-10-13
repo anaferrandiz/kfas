@@ -341,7 +341,7 @@ body {
     background-color: rgb(0, 0, 0);
     margin-top: 3rem;
 
-    position: relative;
+    position: fixed;
     overflow: hidden;
     top: 0;
     z-index: 1;
