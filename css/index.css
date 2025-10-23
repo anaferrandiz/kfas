@@ -1216,7 +1216,7 @@ body {
     width: 75%;
 }
 
-.whitecolor{
+.whitecolor {
     color: white;
 }
 
@@ -1292,9 +1292,109 @@ body {
 
 /**************************** INICIO PÁGINA EL CLUB ********************************************************************/
 
-.wrapper__section__elclub{
+.wrapper__section__elclub {
+    width: 94%;
+    margin: 0 auto;
     margin-top: 4rem;
 }
 
+.elclub__principal {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.principal__h3 {
+    font-size: 24vw;
+
+    font-family: "Badeen Display", system-ui;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.principal__p__elclub {
+    width: 80%;
+    font-size: 2.8vw;
+    font-weight: 600;
+
+}
+
+.wrapper__section__elclub__secundario {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.elclub__secundario {
+    border-top: solid 1px black;
+    padding: 1rem;
+}
+
+/* .wrap__columna__elclub {
+    width: 100%;
+    background-color: gainsboro;
+   
+} */
+
+.columna__elclub__text {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 2.8em;
+
+}
+
+.div__text__elclub {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elclub__text__date {
+    color: var(--color-blau-oscur);
+}
+
+.elclub__text__h4 {}
+
+.elclub__text__h4 {}
+
+.img__columna__elclub {
+    width: 3%;
+}
+
+@media (max-width: 1200px) {
+    .principal__p__elclub {
+        width: 90%;
+        font-size: 1.1em;
+        text-align: left;
+
+    }
+
+    .columna__elclub__text {
+
+        font-size: 1.5em;
+    }
+
+    .div__text__elclub {
+    
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.img__columna__elclub {
+    width: 7%;
+}
+}
 
 /**************************** FIN PÁGINA EL CLUB ********************************************************************/
