@@ -1336,7 +1336,7 @@ body {
     /* padding: 1rem; */
 }
 
-.elclub__secundario--borderbottom{
+.elclub__secundario--borderbottom {
     border-bottom: solid 1px black;
 }
 
@@ -1380,7 +1380,7 @@ body {
     color: var(--color-blau-oscur);
 }
 
-.elclub__text__h4{
+.elclub__text__h4 {
     cursor: pointer;
 }
 
@@ -1392,25 +1392,47 @@ body {
 
 /* EFECTO APARICIÓN IMÁGENES CLUB */
 
-.wrap__columna__elclub{
+.wrap__columna__elclub {
     position: relative;
 }
 
-.imgs__club{
+.imgs__club {
     z-index: 2;
     width: 15%;
     position: absolute;
-    right: 15%;
+    right: 17%;
     top: -14%;
 
     opacity: 0;
-    transition: opacity .5s ease-in-out, transform 2s ease;
+    transition: opacity .1s ease-in-out, transform .4s ease, transform .4s ease;
 }
 
-.imgs__club.isVisible{
+.imgs__club.isVisible {
     opacity: 1;
-    transform: scale(1.1,1.1);
+    transform: translateX(50px) scale(1.4) rotate(10deg);
 }
+
+.imgs__club__movil {
+    display: none;
+}
+
+/* FIN APARICIÓN IMÁGENES */
+
+.aside__elclub {
+    width: 100%;
+
+}
+
+.wrap__grid__elclub {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.margintopfooter {
+    margin-top: 0;
+}
+
 
 /****************** MEDIA QUERIES *************/
 
@@ -1443,34 +1465,78 @@ body {
     }
 
     .columna__elclub__text {
-    
-    padding: 1.5rem;
-}
 
-.wrapper__section__elclub {
-    
-    margin-top: 6rem;
-}
+        padding: 1.5rem;
+    }
 
-.wrapper__section__elclub__secundario {
-    
-    margin-top: 5rem;
-}
+    .wrapper__section__elclub {
 
-.imgs__club{
-    z-index: 2;
-    width: 85%;
-    position: absolute;
-    right: 0;
-    top: -5%;
+        margin-top: 6rem;
+    }
 
-    opacity: 0;
-    transition: opacity .5s ease-in-out, transform 2s ease;
-}
+    .wrapper__section__elclub__secundario {
 
-.elclub__text__h4{
-    z-index: 4;
-}
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .elclub__text__h4 {
+        z-index: 4;
+    }
+
+    .imgs__club {
+        display: none;
+    }
+
+    .wrap__grid__elclub {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
 }
 
 /**************************** FIN PÁGINA EL CLUB ********************************************************************/
+
+
+/**************************** INICI PÁGINA CONTACTE ********************************************************************/
+
+
+.wrapper__section__contacte {
+    width: 100%;
+    min-height: 90vh;
+    background-color: var(--color-blau-oscur);
+    margin-top: 3rem;
+    padding: 3rem;
+
+}
+
+.headerblau {
+    background-color: var(--color-blau-oscur);
+}
+
+.contacte {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.direction__contact {
+    background-color: var(--color-verd-claret);
+}
+
+@media (max-width: 1200px) {
+    .contacte {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 800px) {
+    .contacte {
+        font-size: 1.7em;
+    }
+
+    .wrapper__section__contacte {
+        padding: 4rem 1rem;
+
+    }
+}
