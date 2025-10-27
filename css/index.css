@@ -1650,34 +1650,9 @@ body {
 
 }
 
-/* MODIFICACIÓ HOVER MÒBIL BLAU */
-/* Evita el hover permanent en mòbil */
-/* 🔹 Evita el "hover permanent" i el color blau en mòbil */
-@media (hover: none) and (pointer: coarse) {
-  .faq__question:hover,
-  .faq__question:focus,
-  .faq__question:active {
-    color: inherit !important;
-    background-color: transparent !important;
-  }
-}
-
-/* 🔹 Elimina el parpelleig o ressaltat tàctil */
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* 🔹 Evita focus o selecció de text */
-.faq__question {
-  -webkit-user-select: none;
-  user-select: none;
-  outline: none;
-}
-
-
-
 
 /* FIN PESTANYES INFO */
+
 
 @media (max-width: 1200px) {
     .info__info {
@@ -1700,4 +1675,8 @@ body {
     .faq__answer {
         font-size: 1.6em;
     }
+
+    .faq__question:hover {
+    color: black;
+}
 }
