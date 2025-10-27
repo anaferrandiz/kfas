@@ -1662,15 +1662,15 @@ body {
         font-size: 7vw;
     }
 
-    .faq-item {
+    .faq__item {
         font-size: .7em;
     }
 
     .faq__question {
-        font-size: 1.6em;
+        font-size: 2em;
     }
 
-    .faq-answer {
-        font-size: 1.2em;
+    .faq__answer {
+        font-size: 1.6em;
     }
 }
