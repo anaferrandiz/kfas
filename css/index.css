@@ -1515,6 +1515,10 @@ body {
     background-color: var(--color-blau-oscur);
 }
 
+.headerverd {
+    background-color: var(--color-verd-claret);
+}
+
 .contacte {
     font-size: 4em;
     font-weight: 600;
@@ -1538,5 +1542,135 @@ body {
     .wrapper__section__contacte {
         padding: 4rem 1rem;
 
+    }
+}
+
+/**************************** FIN PÁGINA CONTACTE ********************************************************************/
+
+
+
+/**************************** INICI PÁGINA INFO ********************************************************************/
+
+.wrapper__section__info {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    font-size: 4em;
+
+}
+
+.mainverd {
+    background-color: var(--color-verd-claret);
+}
+
+.info__info__mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: none;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* PESTANYES INFO */
+
+.info__section {
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.faq__container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.faq__item {
+    width: 100%;
+    border-top: 1px solid #000000;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: .5rem 0;
+}
+
+.faq__question:hover {
+    color: var(--color-blau-oscur);
+}
+
+.faq__question {
+    width: 100%;
+    text-align: left;
+    font-size: 2em;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.faq__question::after {
+    content: "+";
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.faq__item.active .faq__question::after {
+    transform: rotate(45deg);
+}
+
+
+.faq__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    /* padding: 0 1.5rem; */
+        font-size: 1.5em;
+
+}
+
+.faq__item.active .faq__answer {
+    max-height: 300px;
+    padding: 1rem .1rem;
+}
+
+.borderbottom{
+        border-bottom: 1px solid #000000;
+
+}
+
+/* FIN PESTANYES INFO */
+
+@media (max-width: 1200px) {
+    .info__info {
+        display: none;
+    }
+
+    .info__info__mobile {
+        display: flex;
+        font-size: 7vw;
+    }
+
+    .faq-item {
+        font-size: .7em;
+    }
+
+    .faq__question {
+        font-size: 1.6em;
+    }
+
+    .faq-answer {
+        font-size: 1.2em;
     }
 }
