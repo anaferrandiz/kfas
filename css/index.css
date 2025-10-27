@@ -1650,6 +1650,31 @@ body {
 
 }
 
+/* MODIFICACIÓ HOVER MÒBIL BLAU */
+/* Evita el hover permanent en mòbil */
+@media (hover: none) and (pointer: coarse) {
+  .faq__question:hover {
+    color: inherit;
+  }
+}
+
+/* Elimina efectes visuals de focus en mòbil */
+.faq__question:focus {
+  outline: none;
+  color: inherit;
+}
+
+/* Elimina el highlight blau en tocar */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+@media (hover: none) and (pointer: coarse) {
+  .faq__question:active {
+    color: var(--color-blau-oscur);
+  }
+}
+
+
 /* FIN PESTANYES INFO */
 
 @media (max-width: 1200px) {
