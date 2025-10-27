@@ -1,3 +1,6 @@
+'use strict'
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const grid = document.querySelector(".grid__agenda");
     const items = Array.from(grid.children);
