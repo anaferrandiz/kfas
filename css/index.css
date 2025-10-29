@@ -778,7 +778,7 @@ body {
     }
 
     .padding-top {
-        margin-top: -3em;
+        margin-top: -4em;
     }
 
     .header__div__second {
@@ -1701,9 +1701,12 @@ body {
     margin: 0 auto;
 }
 
+.blau {
+    background-color: var(--color-blau-oscur);
+}
 
 .h3__latenda {
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 .p__latenda__sub {
@@ -1712,7 +1715,8 @@ body {
 }
 
 .latenda__grid {
-    margin: 1rem;
+    padding: .6rem;
+    padding-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 3rem;
@@ -1758,27 +1762,24 @@ body {
 
 @media (max-width: 1200px) {
     .p__latenda__sub {
-        font-size: 2vw;
+        font-size: 3vw;
+        margin-top: -.5rem;
     }
 
     .latenda__grid {
-
         margin-top: 2rem;
-
-
     }
+
 }
 
 @media (max-width: 1000px) {
     .latenda__grid {
-
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 700px) {
     .latenda__grid {
-
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1791,7 +1792,12 @@ body {
     }
 
     .latenda__grid {
-        column-gap: 1rem;
+        column-gap: .8rem;
         row-gap: .5rem;
+    }
+
+    .div__info__latenda {
+
+        font-size: 1.4vh;
     }
 }
