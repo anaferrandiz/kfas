@@ -1728,7 +1728,7 @@ body {
 .latenda__grid__product {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -1756,12 +1756,6 @@ body {
     margin: 1rem;
     text-align: center;
     font-size: 1em;
-}
-
-
-.latenda__product__title {
-    white-space: nowrap;
-    /* font-size: clamp(0.8rem, 2vw, 1.5rem); */
 }
 
 @media (max-width: 1200px) {
@@ -1801,7 +1795,6 @@ body {
     }
 
     .div__info__latenda {
-
         font-size: 90%;
     }
 }
