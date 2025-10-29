@@ -1816,6 +1816,8 @@ body {
 
 /* Banner de cookies */
 #cookie-banner {
+      display: none;
+    /* se mostrará con JS si no hay aceptación */
     position: fixed;
     top: 0;
     left: 0;
@@ -1826,12 +1828,7 @@ body {
     text-align: center;
     z-index: 4;
     backdrop-filter: blur(.38rem);
-    display: none;
-    /* se mostrará con JS si no hay aceptación */
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+  
 }
 
 #cookie-banner button {
@@ -1850,6 +1847,14 @@ body {
     color: whitesmoke;
 }
 
+.wrapwrap{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 .wrap__cokie {
     width: 30%;
     margin: 0 auto;
@@ -1860,7 +1865,6 @@ body {
     gap: 1rem;
     font-weight: 600;
     font-size: 1.2em;
-    margin-top: -4rem;
 }
 
 @media (max-width: 1000px) {
