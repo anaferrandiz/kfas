@@ -454,8 +454,10 @@ body {
 }
 
 .h3__title__section__01 {
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: .5rem;
+    font-size: 4em;
+    text-transform: uppercase;
 }
 
 .wrapper__grid__section__01 {
@@ -504,6 +506,10 @@ body {
 
 .wrapper__principalinfo:hover .wrap__img img {
     opacity: 1;
+}
+
+.wrap__img picture img {
+    border-radius: 1rem;
 }
 
 .wrapper__principalinfo .wrap__info {
@@ -877,6 +883,10 @@ body {
         font-size: 6vw;
     }
 
+    .h3__title__section__01 {
+        font-size: 7vw;
+    }
+
     /* SECTION 02 */
 
     .p__section__02 {
@@ -1247,7 +1257,7 @@ body {
     }
 
     .wrapper__img__eventos img {
-        border-radius: 0;
+        /* border-radius: 0; */
 
     }
 }
@@ -1636,7 +1646,7 @@ body {
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.3s ease;
     /* padding: 0 1.5rem; */
-        font-size: 1.5em;
+    font-size: 1.5em;
 
 }
 
@@ -1645,8 +1655,8 @@ body {
     padding: 1rem .1rem;
 }
 
-.borderbottom{
-        border-bottom: 1px solid #000000;
+.borderbottom {
+    border-bottom: 1px solid #000000;
 
 }
 
@@ -1677,6 +1687,111 @@ body {
     }
 
     .faq__question:hover {
-    color: black;
+        color: black;
+    }
 }
+
+
+/**************************** FIN PÁGINA INFO ********************************************************************/
+
+
+/**************************** INICI PÁGINA LA TENDA ********************************************************************/
+.section__latenda {
+    width: 94%;
+    margin: 0 auto;
+}
+
+
+.h3__latenda {
+    margin-top: 5rem;
+}
+
+.p__latenda__sub {
+    margin-top: -1rem;
+    font-size: 1em;
+}
+
+.latenda__grid {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3rem;
+    column-gap: 1.5rem;
+
+}
+
+.latenda__grid__product {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.latenda__product__imgs {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+
+}
+
+.img__tenda__02 {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transform: translateY(-10px) scale(1.1);
+    transition: all .3s ease;
+
+}
+
+.latenda__product__imgs:hover .img__tenda__02 {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.div__info__latenda {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+
+@media (max-width: 1200px) {
+    .p__latenda__sub {
+        font-size: 2vw;
+    }
+
+    .latenda__grid {
+
+        margin-top: 2rem;
+
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .latenda__grid {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .latenda__grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section__latenda {
+        width: 98%;
+    }
+
+    .latenda__text {
+        margin: .5rem;
+    }
+
+    .latenda__grid {
+        column-gap: 1rem;
+        row-gap: .5rem;
+    }
 }
