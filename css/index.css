@@ -1735,7 +1735,6 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
-
 }
 
 .img__tenda__02 {
@@ -1799,5 +1798,15 @@ body {
     .div__info__latenda {
 
         font-size: 1.4vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .latenda__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .latenda__product__imgs {
+        width: 100%;
     }
 }
