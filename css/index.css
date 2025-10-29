@@ -1797,11 +1797,11 @@ body {
 
     .div__info__latenda {
 
-        font-size: 1.4vh;
+        font-size: 90%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .latenda__grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1810,3 +1810,70 @@ body {
         width: 100%;
     }
 }
+
+
+/********************************** INICIO COOKIES **********************************/
+
+/* Banner de cookies */
+#cookie-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 242, 0, 0.94);
+    color: #0073ff;
+    text-align: center;
+    z-index: 4;
+    backdrop-filter: blur(.38rem);
+    display: none;
+    /* se mostrará con JS si no hay aceptación */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#cookie-banner button {
+    background-color: var(--color-blau-claret);
+    border: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cookie-banner button:hover {
+    background-color: #0319ad;
+    color: whitesmoke;
+}
+
+.wrap__cokie {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: -4rem;
+}
+
+@media (max-width: 1000px) {
+    .wrap__cokie {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    .wrap__cokie {
+        width: 70%;
+        font-size: 1em;
+    }
+}
+
+/********************************** FIN COOKIES **********************************/
