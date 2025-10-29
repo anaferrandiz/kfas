@@ -1702,7 +1702,7 @@ body {
 }
 
 .blau {
-    background-color: var(--color-blau-oscur);
+    background-color: var(--color-verd-oscur);
 }
 
 .h3__latenda {
@@ -1721,6 +1721,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 3rem;
     column-gap: 1.5rem;
+    row-gap: 1.5rem;
 
 }
 
@@ -1758,6 +1759,10 @@ body {
 }
 
 
+.latenda__product__title {
+    white-space: nowrap;
+    /* font-size: clamp(0.8rem, 2vw, 1.5rem); */
+}
 
 @media (max-width: 1200px) {
     .p__latenda__sub {
@@ -1816,7 +1821,7 @@ body {
 
 /* Banner de cookies */
 #cookie-banner {
-      display: none;
+    display: none;
     /* se mostrará con JS si no hay aceptación */
     position: fixed;
     top: 0;
@@ -1828,7 +1833,7 @@ body {
     text-align: center;
     z-index: 4;
     backdrop-filter: blur(.38rem);
-  
+
 }
 
 #cookie-banner button {
@@ -1847,7 +1852,7 @@ body {
     color: whitesmoke;
 }
 
-.wrapwrap{
+.wrapwrap {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -1855,6 +1860,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .wrap__cokie {
     width: 30%;
     margin: 0 auto;
