@@ -45,7 +45,7 @@ Estructura:
     <!-- ************* COOKIES ************* -->
 
     <!-- Banner de cookies -->
-  <div id="cookie-banner">
+  <div id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
         <div class="wrapwrap">
             <div class="wrap__cokie">
                 <p>Hola! ⚉ Abans que continuïs navegant, hem de dir-te una cosa molt important (bé...
@@ -56,7 +56,7 @@ Estructura:
                     pau amb el teu navegador. Gràcies per la paciència i per suportar l'enèsim missatge de cookies de la
                     teva vida. Prometem que el nostre és, almenys, més simpàtic. 💙</p>
 
-                <button id="accept-cookies">Acceptar</button>
+                 <button id="accept-cookies" aria-label="Aceptar cookies">Acceptar</button>
             </div>
         </div>
 
@@ -67,18 +67,19 @@ Estructura:
 
     <!-- ARROW -->
 
-    <a href="#arrow__up" class="arrow__up">
-        <img src="../assets/arrow_up.webp" alt="arrow">
+    <a href="#arrow__up" class="arrow__up" aria-label="Tornar amunt">
+        <img src="../assets/arrow_up.webp" alt="" aria-hidden="true">
     </a>
     <!-- *************** INICIO HEADER *************** -->
 
-    <header class="header header__eventos">
+    <header class="header header__eventos" role="banner">
 
         <h1 class="header__h1">
             <a href="../index.html" title="K FAS" target="_self">K FAS</a>
         </h1>
 
-        <button class="header__btn" aria-label="Abrir menú de navegación">&#9776;</button>
+         <button class="header__btn" aria-label="Abrir menú de navegación" aria-controls="nav-menu"
+            aria-expanded="false">&#9776;</button>
 
         <nav class="header__nav">
 
@@ -160,7 +161,7 @@ Estructura:
 
     <!-- *************** INICIO MAIN *************** -->
 
-    <main class="main">
+    <main class="main" role="main">
 
 
         <!-- PESTAÑA texto infinito -->
@@ -205,7 +206,7 @@ Estructura:
                 <div class="wrapper__img__eventos">
                     <picture>
                         <source srcset="../assets/posters/10_s.webp" media="(max-width:1000px)">
-                        <img src="../assets/posters/10.webp" alt="Shxwnf Fresh" title="Shxwnf Fresh">
+                        <img src="../assets/posters/10.webp" alt="Cartel del evento Taste Taste">
                     </picture>
                 </div>
             </div>
@@ -256,20 +257,17 @@ Estructura:
             <div class="footer__imgs__grid">
                 <picture>
                     <source srcset="../assets/form_footer_02_s.webp" media="(max-width:1000px)">
-                    <img src="../assets/form_footer_02.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
-                        class="img__grid" loading="lazy">
+                    <img src="../assets/form_footer_02.webp" alt="" class="img__grid" loading="lazy" aria-hidden="true">
                 </picture>
 
                 <picture>
                     <source srcset="../assets/form_footer_01_s.webp" media="(max-width:1000px)">
-                    <img src="../assets/form_footer_01.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
-                        class="img__grid" loading="lazy">
+                    <img src="../assets/form_footer_01.webp" alt="" class="img__grid" loading="lazy" aria-hidden="true">
                 </picture>
 
                 <picture>
                     <source srcset="../assets/form_footer_03_s.webp" media="(max-width:1000px)">
-                    <img src="../assets/form_footer_03.webp" alt="Il·lustració de colors" title="Il·lustració de colors"
-                        class="img__grid" loading="lazy">
+                    <img src="../assets/form_footer_03.webp" alt="" class="img__grid" loading="lazy" aria-hidden="true">
                 </picture>
             </div>
 
