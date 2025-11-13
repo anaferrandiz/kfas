@@ -71,8 +71,8 @@ body {
 
 /* accesibilidad al navegar con tabulador */
 :focus-visible {
-  outline: 2px solid #1a1a1a; 
-  outline-offset: 2px;
+    outline: 2px solid #1a1a1a;
+    outline-offset: 2px;
 }
 
 
@@ -1758,7 +1758,8 @@ body {
 }
 
 .div__info__latenda {
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
     text-align: center;
     font-size: 1em;
 }
@@ -1885,3 +1886,69 @@ body {
 }
 
 /********************************** FIN COOKIES **********************************/
+
+
+
+
+/********************************** SNIPCART **********************************/
+
+.snipcart-checkout {
+    width: 1.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.snipcart-checkout .cart-icon {
+    transition: transform 0.2s ease;
+}
+
+.snipcart-checkout:hover .cart-icon {
+    transform: scale(1.1);
+}
+
+
+.--mobile__snipcart {
+    display: none;
+}
+
+
+
+.div__button__snipcart{
+    width: 100%;
+    cursor: pointer;
+    margin: .4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.snipcart-add-item{
+    background-color: var(--color-verd-claret);
+    padding: .5rem 1.1rem;
+    border-radius: 1rem;
+}
+
+.snipcart-add-item:hover{
+    background-color: var(--color-blau-oscur);
+    color: white;
+   
+}
+
+@media (max-width: 1200px) {
+    .--mobile__snipcart {
+        display: flex;
+    }
+
+    .--carrito__black {
+        display: none;
+    }
+
+    .snipcart-add-item{
+    font-size: .8em;
+}
+
+}
