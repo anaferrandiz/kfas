@@ -1719,6 +1719,13 @@ body {
     font-size: 1em;
 }
 
+.p__latenda__sub__02{
+    font-style: italic;
+    font-size: .8em;
+}
+
+
+
 .latenda__grid {
     padding: .6rem;
     padding-bottom: 3rem;
@@ -1768,6 +1775,10 @@ body {
     .p__latenda__sub {
         font-size: 3vw;
         margin-top: -.5rem;
+    }
+
+    .p__latenda__sub__02 {
+        font-size: 2vw;
     }
 
     .latenda__grid {
@@ -1915,7 +1926,7 @@ body {
 
 
 
-.div__button__snipcart{
+.div__button__snipcart {
     width: 100%;
     cursor: pointer;
     margin: .4rem;
@@ -1926,16 +1937,16 @@ body {
 
 }
 
-.snipcart-add-item{
+.snipcart-add-item {
     background-color: var(--color-verd-claret);
     padding: .5rem 1.1rem;
     border-radius: 1rem;
 }
 
-.snipcart-add-item:hover{
+.snipcart-add-item:hover {
     background-color: var(--color-blau-oscur);
     color: white;
-   
+
 }
 
 @media (max-width: 1200px) {
@@ -1947,8 +1958,8 @@ body {
         display: none;
     }
 
-    .snipcart-add-item{
-    font-size: .8em;
-}
+    .snipcart-add-item {
+        font-size: .8em;
+    }
 
 }
