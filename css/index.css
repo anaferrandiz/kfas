@@ -1932,7 +1932,7 @@ body {
     margin: .4rem;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
 }
@@ -1962,4 +1962,99 @@ body {
         font-size: .8em;
     }
 
+}
+
+
+/*********************************** PRODUCTES ***********************************/
+
+/********************** COTXE *****************************/
+
+.wrapper__section__product{
+    width: 90%;
+    min-height: 50vh;
+    margin: 0 auto;
+    /* background-color: rgb(215, 175, 255); */
+    padding-top: 8rem;
+    margin-bottom: -1rem;
+    padding-bottom: 7rem;
+}
+
+.grid__product{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wrap__product__imgs{
+    width: 100%;
+    
+}
+
+.carrusel__product{
+    width: 100%;
+    background-color: lightgrey;
+    /* margin: 6rem auto; */
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+
+.carrusel__product__img {
+    width: 100%;
+    /* min-height: 12.5rem; */
+    background-color: aqua;
+}
+
+
+.siguientearroww {
+    right: 0;
+    opacity: 0.4;
+}
+
+.anteriorarroww {
+    left: 0;
+    opacity: 0.4;
+}
+
+
+/* carrusel */
+
+
+.product__img__principal {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.product__galeria__imgs {
+    width: 100%;
+    display: grid;
+  grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    opacity: 0.6;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+
+.product__galeria__imgs .img__product{
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.3s;
+} 
+
+ .product__galeria__imgs .img__product:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.product__galeria__imgs .img__product.active {
+    opacity: 1;
 }
