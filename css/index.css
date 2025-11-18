@@ -1808,7 +1808,7 @@ body {
 
     .latenda__grid {
         column-gap: .8rem;
-        row-gap: .5rem;
+        row-gap: 2.5rem;
     }
 
     .div__info__latenda {
