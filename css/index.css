@@ -889,7 +889,7 @@ body {
     }
 
     .h3__title__section__01 {
-        font-size: 7vw;
+        font-size: 3em;
     }
 
     /* SECTION 02 */
@@ -1773,12 +1773,12 @@ body {
 
 @media (max-width: 1200px) {
     .p__latenda__sub {
-        font-size: 3vw;
+        font-size: 1em;
         margin-top: -.5rem;
     }
 
     .p__latenda__sub__02 {
-        font-size: 2vw;
+        font-size: .7em;
     }
 
     .latenda__grid {
@@ -1818,7 +1818,7 @@ body {
 
 @media (max-width: 400px) {
     .latenda__grid {
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
     }
 
     .latenda__product__imgs {
