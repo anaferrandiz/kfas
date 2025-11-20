@@ -1336,6 +1336,7 @@ body {
     width: 80%;
     font-size: 2.8vw;
     font-weight: 600;
+    line-height: 1.2em;
 
 }
 
@@ -1537,6 +1538,8 @@ body {
 .contacte {
     font-size: 4em;
     font-weight: 600;
+    line-height: 1.1em;
+
 }
 
 .direction__contact {
@@ -1552,6 +1555,8 @@ body {
 @media (max-width: 800px) {
     .contacte {
         font-size: 1.7em;
+            line-height: 1.3em;
+
     }
 
     .wrapper__section__contacte {
@@ -2065,30 +2070,32 @@ body {
     gap: 1rem;
 }
 
-.titleproduct{
+.titleproduct {
     font-size: 2vw;
 }
+
 .priceproduct {
     font-size: 2.4vw;
 }
 
 @media (max-width: 1200px) {
 
-.grid__product {
-   width: 100%;
-}
+    .grid__product {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
     .grid__product {
-     width: 90%; 
-    grid-template-columns: 1fr;
+        width: 90%;
+        grid-template-columns: 1fr;
     }
 
-    .titleproduct{
-    font-size: 2em;
-}
-.priceproduct {
-    font-size: 2.4em;
-}
+    .titleproduct {
+        font-size: 2em;
+    }
+
+    .priceproduct {
+        font-size: 2.4em;
+    }
 }
